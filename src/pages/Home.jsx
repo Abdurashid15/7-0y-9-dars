@@ -18,10 +18,10 @@ const Home = () => {
         const response = await axios.get(`https://api.kinopoisk.dev/v1.4/movie?rating.imdb=8-10&page=${currentPage}&limit=${moviesPerPage}`, {
           headers: {
             'X-API-KEY': '0NWNHJ8-QBRMK6H-K5WVH3M-KBWFSF3'
-          }
+          } 
         });
         setMovies(response.data.docs);
-        setTotalPages(Math.ceil(response.data.total / moviesPerPage)); // Calculate total pages
+        setTotalPages(Math.ceil(response.data.total / moviesPerPage)); 
       } catch (error) {
         console.error('Error fetching movies:', error);
       }

@@ -5,6 +5,7 @@ import Login from './pages/Login'
 import { Routes,Route } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import Bookmarked from './pages/Bookmarked'
+import Error from './pages/Error'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/bookmarked" element={<MainLayout><Bookmarked /></MainLayout>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   )
