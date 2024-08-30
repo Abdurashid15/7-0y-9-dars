@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <aside className="h-screen bg-gray-800 flex flex-col items-center py-3 px-2 left-2 top-2 rounded relative">
+    <aside className="h-screen bg-gray-800 flex flex-col items-center py-3 px-4 left-2 top-2 rounded relative">
       <div className="mb-8">
         <Link to="/" className="h-10 w-10 flex items-center justify-center">
           {/* SVG логотипа */}

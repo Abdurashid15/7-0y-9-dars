@@ -63,7 +63,7 @@ const Home = () => {
         <h2 className="text-2xl font-bold mb-4">Recommended for you</h2>
         <div className="grid grid-cols-4 gap-4">
           {movies.map((movie) => (
-            <div key={movie.id} className="relative w-72 rounded-lg overflow-hidden shadow-lg">
+            <div key={movie.id} className="relative w-80 rounded-lg overflow-hidden shadow-lg">
               <img src={movie.poster?.url} alt={movie.name} className="w-full h-48 object-cover" />
               <div className="absolute top-2 right-2">
                 <FaBookmark
